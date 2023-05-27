@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "types": ["node", "@wdio/globals/types", "@wdio/mocha-framework"],
+    "target": "es2022",
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  }
+}
