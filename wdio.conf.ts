@@ -24,16 +24,6 @@ export const config: WebdriverIO.Config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
-  services: [
-    [
-      "selenium-standalone",
-      {
-        args: {
-          seleniumArgs: ["--host", "127.0.0.1", "--port", "5555"],
-        },
-      },
-    ],
-  ],
   framework: "mocha",
   mochaOpts: {
     ui: "bdd",
