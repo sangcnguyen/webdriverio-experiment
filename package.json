@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run wdio.conf.ts",
+    "test:local": "npx wdio run wdio.local.conf.ts",
+    "test:cloud": "npx wdio run wdio.awsdevicefarm.conf.ts",
     "report": "npx allure generate --clean allure-results"
   },
   "repository": {
@@ -27,5 +28,10 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "webdriverio": "^8.29.1"
+  },
+  "devDependencies": {
+    "@wdio/types": "^8.29.1",
+    "dotenv": "^16.4.1",
+    "wdio-aws-device-farm-service": "^8.0.5"
   }
 }

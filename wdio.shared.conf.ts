@@ -1,4 +1,4 @@
-export const config: WebdriverIO.Config = {
+export const config = {
   runner: "local",
   autoCompileOpts: {
     autoCompile: true,
@@ -9,16 +9,8 @@ export const config: WebdriverIO.Config = {
   },
   specs: ["./src/tests/**/*.ts"],
   exclude: [],
-  maxInstances: 10,
-  capabilities: [
-    {
-      maxInstances: 5,
-      //
-      browserName: "chrome",
-      acceptInsecureCerts: true,
-    },
-  ],
-  logLevel: "info",
+  maxInstances: 3,
+  logLevel: "debug",
   bail: 0,
   baseUrl: "http://the-internet.herokuapp.com",
   waitforTimeout: 10000,

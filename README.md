@@ -4,9 +4,13 @@
 
 ## Running tests
 
-Run all tests.
+Run all tests against the local env.
 
-`npm run test`
+`npm run test:local`
+
+Run all tests against the cloud provider.
+
+`npm run test:cloud`
 
 ## Reports
 
